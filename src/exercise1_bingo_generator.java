@@ -36,6 +36,7 @@ public class exercise1_bingo_generator {
         }
         OutputCard(bingoLayout,rows,columns);
     }
+
     public static void OutputCard(int[][] bingoLayout, int rows, int columns){
         System.out.print("\n-------------------------------\n");
         System.out.printf("|  %-3s|  %-3s|  %-3s|  %-3s|  %-3s|", "Bingo".split(""));
