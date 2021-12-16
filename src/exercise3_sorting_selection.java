@@ -9,7 +9,7 @@ public class exercise3_sorting_selection {
     //Vars
         int tempMemoryForSwitching;
         int posMin;
-        int[] numbers = new int[100];
+        int[] numbers = new int[10];
 
     //Fill Array
         for (int i = 0; i < numbers.length;i++){
@@ -26,7 +26,7 @@ public class exercise3_sorting_selection {
 
     //SORT
         //FOR1: Runs through every Int in Array
-        for(int i = 0; i < numbers.length;i++){
+        for(int i = 0; i < numbers.length-1;i++){
             posMin = i;
             //FOR2: Checks if there is any smaller number starting with next number in array --> i+1
             for(int j = i+1; j < numbers.length;j++){
