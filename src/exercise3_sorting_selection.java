@@ -9,7 +9,7 @@ public class exercise3_sorting_selection {
     //Vars
         int tempMemoryForSwitching;
         int posMin;
-        int[] numbers = new int[10];
+        int[] numbers = new int[100];
 
     //Fill Array
         for (int i = 0; i < numbers.length;i++){
@@ -17,11 +17,8 @@ public class exercise3_sorting_selection {
         }
     //
 
-    //Output unsorted String
-        for(int i = 0; i < numbers.length; i++){
-            System.out.print(numbers[i] + "  ");
-        }
-        System.out.println("");
+    //Output unsorted Array
+        printArray(numbers);
     //
 
     //SORT
@@ -44,11 +41,17 @@ public class exercise3_sorting_selection {
             }
         }
     //
-    //Output for sorted arrays
-        for(int k = 0; k < numbers.length; k++){
-            System.out.print(numbers[k] + "  ");
+        // Output sorted Array
+        printArray(numbers);
+        //
+
+    }
+
+    public static void printArray(int[] numbers){
+        for(int i = 0; i < numbers.length; i++){
+            System.out.print(numbers[i] + "  ");
         }
-    //
+        System.out.println();
     }
 
 }
