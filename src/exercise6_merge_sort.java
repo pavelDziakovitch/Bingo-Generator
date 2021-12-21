@@ -1,4 +1,3 @@
-import java.sql.SQLOutput;
 import java.util.Random;
 
 public class exercise6_merge_sort {
@@ -52,13 +51,12 @@ public class exercise6_merge_sort {
             if(numbers[leftPos] <= numbers[rightPos]){
                 tempArray[counterTempPos] = numbers[leftPos];
                 leftPos++;
-                counterTempPos++;
             }
             else{
                 tempArray[counterTempPos] = numbers[rightPos];
                 rightPos++;
-                counterTempPos++;
             }
+            counterTempPos++;
         }
 
         //when one half is sorted in temp array, just insert the leftover other half
